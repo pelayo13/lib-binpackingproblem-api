@@ -1,2 +1,2 @@
 # lib-binpackingproblem-api
-Microservice for storing and generating all microservices APIs
+Library for storing and generating all microservices APIs
