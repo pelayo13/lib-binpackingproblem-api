@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package v1.model;
+
+import "google/protobuf/wrappers.proto";
+
+option java_package = "v1.model";
+option java_outer_classname = "BppItemProto";
+
+message BppItem {
+   google.protobuf.Int32Value size = 1;
+   google.protobuf.Int32Value due_date = 2;
+}

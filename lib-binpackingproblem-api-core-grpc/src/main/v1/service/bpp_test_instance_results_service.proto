@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package v1.service;
+
+import "create_by_bpp_test_instance.proto";
+
+option java_package = "v1.service";
+option java_outer_classname = "BppTestInstanceResultsServiceProto";
+option java_generic_services = true;
+
+service BppTestInstanceResultsService {
+
+  rpc CreateByBppTestInstance(CreateByBppTestInstanceRequest) returns (CreateByBppTestInstanceResponse) {}
+}

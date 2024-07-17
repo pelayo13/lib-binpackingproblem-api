@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package v1.model;
+
+import "bpp_bin.proto";
+import "bpp_item.proto";
+import "google/protobuf/wrappers.proto";
+
+option java_package = "v1.model";
+option java_outer_classname = "BppInstanceProto";
+
+message BppInstance {
+   repeated BppBin bins = 1;
+   repeated BppItem items = 2;
+   google.protobuf.Int32Value bins_capacity = 3;
+}

@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package v1.model;
+
+option java_package = "v1.model";
+option java_outer_classname = "BppGreedyAlgorithmTypeProto";
+
+enum BppGreedyAlgorithmType {
+  BPP_GREEDY_ALGORITHM_TYPE_UNSPECIFIED = 0;
+  BPP_GREEDY_ALGORITHM_TYPE_RANDOM = 1;
+  BPP_GREEDY_ALGORITHM_TYPE_FIRST_FIT_DECREASING = 2;
+  BPP_GREEDY_ALGORITHM_TYPE_BEST_FIT_DECREASING = 3;
+}

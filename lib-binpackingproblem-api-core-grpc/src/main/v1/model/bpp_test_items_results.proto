@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package v1.model;
+
+import "bpp_test_results.proto";
+import "google/protobuf/wrappers.proto";
+
+option java_package = "v1.model";
+option java_outer_classname = "BppTestItemsResultsProto";
+
+message BppTestItemsResults {
+   google.protobuf.Int32Value numberItems = 1;
+   repeated BppTestResults test_results = 2;
+}
