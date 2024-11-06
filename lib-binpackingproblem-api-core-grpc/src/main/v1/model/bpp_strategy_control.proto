@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package v1.model;
+
+option java_package = "v1.model";
+option java_outer_classname = "BppStrategyControlProto";
+
+enum BppStrategyControl {
+  BPP_STRATEGY_CONTROL_UNSPECIFIED = 0;
+  BPP_STRATEGY_CONTROL_HILL_CLIMBING = 1;
+}

@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package v1.model;
+
+option java_package = "v1.model";
+option java_outer_classname = "BppBinsInterchangeOperationProto";
+
+message BppBinsInterchangeOperation {
+}

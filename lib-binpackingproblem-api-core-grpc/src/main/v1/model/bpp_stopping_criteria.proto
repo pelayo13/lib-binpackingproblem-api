@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package v1.model;
+
+import "google/protobuf/wrappers.proto";
+
+option java_package = "v1.model";
+option java_outer_classname = "BppStoppingCriteriaProto";
+
+message BppStoppingCriteria {
+   google.protobuf.Int32Value maxNumberIterations = 1;
+}

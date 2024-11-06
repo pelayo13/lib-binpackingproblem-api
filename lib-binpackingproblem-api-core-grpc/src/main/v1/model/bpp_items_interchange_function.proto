@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package v1.model;
+
+option java_package = "v1.model";
+option java_outer_classname = "BppItemsInterchangeFunctionProto";
+
+enum BppItemsInterchangeFunction {
+  BPP_ITEMS_INTERCHANGE_FUNCTION_UNSPECIFIED = 0;
+  BPP_ITEMS_INTERCHANGE_FUNCTION_SIZE = 1;
+  BPP_ITEMS_INTERCHANGE_FUNCTION_ALWAYS = 2;
+}

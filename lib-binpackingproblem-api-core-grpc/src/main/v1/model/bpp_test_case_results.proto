@@ -10,5 +10,13 @@ option java_outer_classname = "BppTestCaseResultsProto";
 message BppTestCaseResults {
    google.protobuf.Int32Value number_bins = 1;
    google.protobuf.DoubleValue average_tardiness_stored_items = 2;
-   google.protobuf.DoubleValue seconds = 3;
+   google.protobuf.DoubleValue average_lateness_stored_items = 3;
+   google.protobuf.Int32Value maximum_lateness = 4;
+   google.protobuf.Int32Value available_capacity = 5;
+   google.protobuf.Int32Value number_iterations = 6;
+   google.protobuf.Int32Value number_neighbors_generated = 7;
+   google.protobuf.Int32Value number_evaluated_neighbors = 8;
+   google.protobuf.DoubleValue fitness = 9;
+   repeated google.protobuf.DoubleValue evaluation_function_results_records = 10;
+   google.protobuf.DoubleValue seconds = 11;
 }

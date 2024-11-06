@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package v1.model;
+
+option java_package = "v1.model";
+option java_outer_classname = "BppBinsSelectionFunctionProto";
+
+enum BppBinsSelectionFunction {
+  BPP_BINS_SELECTION_FUNCTION_UNSPECIFIED = 0;
+  BPP_BINS_SELECTION_FUNCTION_SMALLEST_OCCUPIED_CAPACITY = 1;
+}

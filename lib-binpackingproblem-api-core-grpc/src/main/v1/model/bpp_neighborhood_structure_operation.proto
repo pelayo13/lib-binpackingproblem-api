@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package v1.model;
+
+import "bpp_neighborhood_structure_operation_type.proto";
+import "bpp_bins_destruction_operation.proto";
+import "bpp_bins_interchange_operation.proto";
+import "bpp_reconstruction_operation.proto";
+import "bpp_stored_items_and_free_items_interchange_operation.proto";
+import "bpp_stored_items_interchange_operation.proto";
+
+option java_package = "v1.model";
+option java_outer_classname = "BppNeighborhoodStructureOperationProto";
+
+message BppNeighborhoodStructureOperation {
+   BppNeighborhoodStructureOperationType type = 1;
+   oneof operation {
+      BppBinsDestructionOperation bins_destruction_operation = 2;
+      BppBinsInterchangeOperation bins_interchange_operation = 3;
+      BppReconstructionOperation reconstruction_operation = 4;
+      BppStoredItemsAndFreeItemsInterchangeOperation stored_items_and_free_items_interchange_operation = 5;
+      BppStoredItemsInterchangeOperation stored_items_interchange_operation = 6;
+   }
+}

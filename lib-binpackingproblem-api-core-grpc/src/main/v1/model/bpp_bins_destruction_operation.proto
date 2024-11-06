@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package v1.model;
+
+import "bpp_bins_selection_function.proto";
+import "google/protobuf/wrappers.proto";
+
+option java_package = "v1.model";
+option java_outer_classname = "BppBinsDestructionOperationProto";
+
+message BppBinsDestructionOperation {
+   google.protobuf.Int32Value number_to_destroy = 1;
+   BppBinsSelectionFunction bins_selection_function = 2;
+}

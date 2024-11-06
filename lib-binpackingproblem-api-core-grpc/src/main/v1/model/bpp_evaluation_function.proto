@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package v1.model;
+
+option java_package = "v1.model";
+option java_outer_classname = "BppEvaluationFunctionProto";
+
+enum BppEvaluationFunction {
+  BPP_EVALUATION_FUNCTION_UNSPECIFIED = 0;
+  BPP_EVALUATION_FUNCTION_BINS_NUMBER = 1;
+  BPP_EVALUATION_FUNCTION_TARDINESS = 2;
+  BPP_EVALUATION_FUNCTION_LATENESS = 3;
+  BPP_EVALUATION_FUNCTION_MAXIMUM_LATENESS = 4;
+  BPP_EVALUATION_FUNCTION_AVAILABLE_CAPACITY = 5;
+  BPP_EVALUATION_FUNCTION_FITNESS = 6;
+}
