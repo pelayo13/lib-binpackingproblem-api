@@ -8,4 +8,5 @@ option java_outer_classname = "BppStrategyControlProto";
 enum BppStrategyControl {
   BPP_STRATEGY_CONTROL_UNSPECIFIED = 0;
   BPP_STRATEGY_CONTROL_HILL_CLIMBING = 1;
+  BPP_STRATEGY_CONTROL_GRADIENT_DESCENT = 2;
 }
