@@ -6,12 +6,12 @@ import "bpp_solvable_instance.proto";
 import "bpp_solution.proto";
 
 option java_package = "v1.service";
-option java_outer_classname = "CreateBySolvableInstancesProto";
+option java_outer_classname = "CreateBppSolutionsBySolvableInstancesProto";
 
-message CreateByBppSolvableInstancesRequest {
+message CreateBppSolutionsByBppSolvableInstancesRequest {
   repeated v1.model.BppSolvableInstance solvable_instances = 1;
 }
 
-message CreateByBppSolvableInstancesResponse {
+message CreateBppSolutionsByBppSolvableInstancesResponse {
   repeated v1.model.BppSolution solutions = 1;
 }

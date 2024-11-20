@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package v1.service;
+
+import "create_bpp_metrics_by_bpp_random_instances.proto";
+import "create_bpp_metrics_by_bpp_instances.proto";
+
+option java_package = "v1.service";
+option java_outer_classname = "BppAlgorithmServiceProto";
+option java_generic_services = true;
+
+service BppAlgorithmService {
+
+  rpc CreateBppMetricsByBppRandomInstances(CreateBppMetricsByBppRandomInstancesRequest) returns (CreateBppMetricsByBppRandomInstancesResponse) {}
+
+  rpc CreateBppMetricsByBppInstances(CreateBppMetricsByBppInstancesRequest) returns (CreateBppMetricsByBppInstancesResponse) {}
+}

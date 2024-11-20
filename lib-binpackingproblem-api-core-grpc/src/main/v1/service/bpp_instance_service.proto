@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package v1.service;
+
+import "create_bpp_solutions_by_bpp_solvable_instances.proto";
+
+option java_package = "v1.service";
+option java_outer_classname = "BppInstanceServiceProto";
+option java_generic_services = true;
+
+service BppInstanceService {
+
+  rpc CreateBppSolutionsByBppSolvableInstances(CreateBppSolutionsByBppSolvableInstancesRequest)
+      returns (CreateBppSolutionsByBppSolvableInstancesResponse) {}
+}

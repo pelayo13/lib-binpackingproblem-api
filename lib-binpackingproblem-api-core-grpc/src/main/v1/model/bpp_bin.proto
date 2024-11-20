@@ -2,11 +2,11 @@ syntax = "proto3";
 
 package v1.model;
 
-import "bpp_stored_item.proto";
+import "bpp_item.proto";
 
 option java_package = "v1.model";
 option java_outer_classname = "BppBinProto";
 
 message BppBin {
-   repeated BppStoredItem items = 1;
+   repeated BppItem items = 1;
 }

@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package v1.service;
+
+import "bpp_algorithm.proto";
+import "bpp_instance.proto";
+import "bpp_algorithm_metrics.proto";
+import "google/protobuf/wrappers.proto";
+
+option java_package = "v1.service";
+option java_outer_classname = "CreateBppMetricsByBppInstancesProto";
+
+message CreateBppMetricsByBppInstancesRequest {
+  repeated v1.model.BppInstance instances = 1;
+
+  repeated v1.model.BppAlgorithm algorithms = 2;
+
+  google.protobuf.Int32Value number_repetitions = 3;
+}
+
+message CreateBppMetricsByBppInstancesResponse {
+  repeated v1.model.BppAlgorithmMetrics algorithms_metrics = 1;
+}

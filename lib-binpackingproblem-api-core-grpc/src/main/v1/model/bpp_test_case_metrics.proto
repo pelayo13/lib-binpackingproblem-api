@@ -5,9 +5,9 @@ package v1.model;
 import "google/protobuf/wrappers.proto";
 
 option java_package = "v1.model";
-option java_outer_classname = "BppTestCaseResultsProto";
+option java_outer_classname = "BppTestCaseMetricsProto";
 
-message BppTestCaseResults {
+message BppTestCaseMetrics {
    google.protobuf.Int32Value number_bins = 1;
    google.protobuf.DoubleValue average_tardiness_stored_items = 2;
    google.protobuf.DoubleValue average_lateness_stored_items = 3;

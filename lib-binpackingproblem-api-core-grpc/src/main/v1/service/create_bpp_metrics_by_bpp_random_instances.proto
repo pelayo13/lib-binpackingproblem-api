@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+package v1.service;
+
+import "bpp_instance_metrics.proto";
+import "bpp_algorithm.proto";
+import "google/protobuf/wrappers.proto";
+
+option java_package = "v1.service";
+option java_outer_classname = "CreateBppMetricsByBppRandomInstancesProto";
+
+message CreateBppMetricsByBppRandomInstancesRequest {
+  google.protobuf.Int32Value bins_capacity = 1;
+
+  google.protobuf.Int32Value min_items_size = 2;
+
+  google.protobuf.Int32Value max_items_size = 3;
+
+  google.protobuf.Int32Value min_items_due_date = 4;
+
+  google.protobuf.Int32Value max_items_due_date = 5;
+
+  repeated google.protobuf.Int32Value number_items = 6;
+
+  google.protobuf.Int32Value number_repetitions = 7;
+
+  repeated v1.model.BppAlgorithm algorithms = 8;
+}
+
+message CreateBppMetricsByBppRandomInstancesResponse {
+  repeated v1.model.BppInstanceMetrics instances_metrics = 1;
+}

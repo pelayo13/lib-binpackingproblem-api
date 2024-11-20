@@ -3,10 +3,12 @@ syntax = "proto3";
 package v1.model;
 
 import "bpp_bin.proto";
+import "bpp_details_of_solution.proto";
 
 option java_package = "v1.model";
 option java_outer_classname = "BppSolutionProto";
 
 message BppSolution {
    repeated BppBin bins = 1;
+   BppDetailsOfSolution details = 2;
 }

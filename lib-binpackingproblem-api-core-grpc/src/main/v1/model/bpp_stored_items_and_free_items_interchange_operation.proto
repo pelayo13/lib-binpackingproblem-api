@@ -2,7 +2,6 @@ syntax = "proto3";
 
 package v1.model;
 
-import "bpp_items_selection_function.proto";
 import "bpp_items_interchange_function.proto";
 import "google/protobuf/wrappers.proto";
 
@@ -12,7 +11,6 @@ option java_outer_classname = "BppStoredItemsAndFreeItemsInterchangeOperationPro
 message BppStoredItemsAndFreeItemsInterchangeOperation {
    google.protobuf.Int32Value number_items_to_interchange_from = 1;
    google.protobuf.Int32Value number_items_to_interchange_to = 2;
-   BppItemsSelectionFunction items_from_selection_function = 3;
-   BppItemsInterchangeFunction items_interchange_function = 4;
-   google.protobuf.Int32Value number_interchanges = 5;
+   BppItemsInterchangeFunction items_interchange_function = 3;
+   google.protobuf.Int32Value number_interchanges = 4;
 }
